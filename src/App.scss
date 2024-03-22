@@ -1,0 +1,455 @@
+$same-color: #e56d53;
+$main-bg: black;
+$main-color: white;
+
+body {
+  background: $main-bg;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: white;
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  button {
+    padding: 8px 20px;
+    width: 100px;
+    background-color: $same-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #27ae60;
+  }
+}
+
+.heart {
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+//empty
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  text-align: center;
+  margin-top: 20px;
+
+  h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+}
+
+// Pagination.jsx
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pageButton {
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  border-radius: 50%;
+}
+
+//sorting.jsx
+
+.sort-movies {
+  display: flex;
+  gap: 10px;
+  flex-direction: row-reverse;
+  // align-items: center;
+  // align-items: center;
+  // min-height: 40vh;
+  // max-height: 40vh;
+  margin-top: 30px;
+}
+
+.movies-section {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.sort-section {
+  flex: 0 0 auto;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+// genere list
+
+.genres-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.genre-item {
+  padding: 8px 40px;
+  text-align: center;
+  background-color: #3498db;
+  border-bottom: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+  padding: 9px;
+  border-radius: 4px;
+}
+
+.genre-item-1 {
+  background-color: $same-color;
+}
+li {
+  width: 200px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 20px 0;
+  color: $main-color;
+
+  span {
+    color: $same-color;
+    margin-right: 5px;
+    font-weight: 600;
+  }
+}
+
+th {
+  font-size: 1.5rem;
+}
+
+//navbar.jsx
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+
+  .logo h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .links {
+    display: flex;
+    gap: 20px;
+    text-transform: capitalize;
+  }
+}
+
+nav {
+  button {
+    background: transparent;
+    padding: 5px;
+  }
+}
+
+.semi-normal {
+  color: #058bf8;
+}
+.semi-normal:hover {
+  border-bottom: 1px solid #058bf8;
+}
+
+.notFound {
+  text-align: center;
+  margin: 200px 0 0 0;
+  font-size: 5rem;
+  font-weight: 100;
+  color: white;
+}
+
+// Login.jsx
+.coverer {
+  background: black;
+  height: 90vh;
+  // background-image: url('https://img.nowrunning.com/content/movie/2023/ui-28593/Stills/poster-big_2023911.jpg');
+  filter: brightness(120%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(135deg, #eead92 10%, #6018dc 100%);
+}
+.form-section {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  // background: black;
+  .form-group {
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 40vw;
+    // height: 500px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    gap: 30px;
+    // background-image: url('https://img.nowrunning.com/content/movie/2023/ui-28593/Stills/poster-big_2023911.jpg');
+    filter: brightness(120%);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    // box-shadow:  0 0 7px rgba(255, 255, 255, 0.788);
+    // border: 5px solid rgba(255, 255, 255, 0.589);
+    background: rgb(255, 255, 255);
+
+    .input-data {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      label {
+        text-align: left;
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: white;
+        color: black;
+      }
+      select {
+        width: 35vw;
+      }
+      input,
+      select {
+        width: 35vw;
+        border-radius: 20px;
+        padding: 9px;
+
+        border: none;
+        outline: none;
+        border: 2px solid gray;
+      }
+      input:focus {
+        border: 4px solid rgb(0, 200, 255);
+      }
+      input:invalid[focused="true"] ~ .error {
+        display: block;
+      }
+      input:invalid[focused="true"] {
+        border: 2px solid red;
+      }
+      input::placeholder {
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.formbutton {
+  button {
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 8px;
+    cursor: pointer;
+    background: rgb(22, 22, 22);
+    color: white;
+  }
+}
+
+.error {
+  margin-top: 8px;
+  color: rgb(251, 52, 52);
+  text-transform: capitalize;
+  display: none;
+}
+
+.red {
+  color: red;
+}
+
+.new-button {
+  width: 100px;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 10px 0px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #e56d53;
+  font-size: larger;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.new-user {
+  display: flex;
+  gap: 20px;
+  color: white;
+  align-items: center;
+  span {
+    color: red;
+  }
+}
+
+.logout {
+  color: white;
+  border: 1px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.active {
+  color: white;
+  button {
+    color: white;
+    padding: 7px;
+    background: #058bf8;
+    width: 90px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+}
+
+.normal {
+  button {
+    color: white;
+    padding: 7px;
+    background: #e56d53;
+    width: 90px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+}
+
+.active {
+  background: #e56d53;
+}
+
+// Here On wards New Form Starts
+
+.new-form {
+  width: 100vw;
+  height: 45vw;
+  background-image: linear-gradient(135deg, #eead92 10%, #6018dc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .updated-form {
+    width: 600px;
+    padding: 25px;
+    border-radius: 20px;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    .new-input {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      input,
+      select {
+        width: 35vw;
+        border-radius: 20px;
+        padding: 9px;
+        border: none;
+        outline: none;
+        border: 2px solid gray;
+      }
+      input:focus {
+        border: 4px solid rgb(0, 200, 255);
+      }
+    }
+    .new-submit {
+      button {
+        width: 100px;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        padding: 8px;
+        cursor: pointer;
+        background: rgb(22, 22, 22);
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+.update{
+  color: green;
+}
+
+.error{
+  color: red;
+}

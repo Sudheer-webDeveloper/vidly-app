@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800;900;1000&display=swap");
+
+$font-base: "Cormorant Upright", serif;
+$font-alt: "Open Sans", sans-serif;
+
+$color-golden: #dcca87;
+$color-black: #0c0c0c;
+$color-gray: #545454;
+$color-crimson: #f5efdb;
+$color-grey: #aaaaaa;
+$color-white: #ffffff;
+
+$Tmobile: 1410px;
+$Gmobile: 1350px;
+$Nmobile: 1350px;
+$Zmobile: 1250px;
+$Amobile: 1000px;
+$AMmobile: 950px;
+$mobile: 800px;
+$Fmobile: 700px;
+$Bmobile: 600px;
+$SMmobile: 500px;
+$Smobile: 400px;
+
+@mixin Nmobile {
+  @media (max-width: $Nmobile) {
+    @content;
+  }
+}
+@mixin Tmobile {
+  @media (max-width: $Tmobile) {
+    @content;
+  }
+}
+
+@mixin Gmobile {
+  @media (max-width: $Gmobile) {
+    @content;
+  }
+}
+@mixin Zmobile {
+  @media (max-width: $Zmobile) {
+    @content;
+  }
+}
+
+@mixin Amobile {
+  @media (max-width: $Amobile) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin AMmobile {
+  @media (max-width: $AMmobile) {
+    @content;
+  }
+}
+@mixin Fmobile {
+  @media (max-width: $Fmobile) {
+    @content;
+  }
+}
+@mixin Bmobile {
+  @media (max-width: $Bmobile) {
+    @content;
+  }
+}
+@mixin SMmobile {
+  @media (max-width: $SMmobile) {
+    @content;
+  }
+}
+@mixin Smobile {
+  @media (max-width: $Smobile) {
+    @content;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: $font-alt;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
